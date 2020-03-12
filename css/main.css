@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  color: #222;
+  background-color: #ffff00;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-top: 12rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.box {
+  width: calc(75%);
+  background: #ddd;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+}
+
+.blue {
+  background-color: rgba(56, 207, 248, 0.5);
+}
+
+.translatey {
+  transform: translateY;
+  transition: transform 0.5s ease;
+}
+
+
+.box:hover .translatey {
+  transform: translateY(2em);
+}
+
+.translatex {
+  transform: translateX(1);
+  transition: transform 0.5s ease;
+}
+
+.box:hover .translatex {
+  transform: translateX(2em);
+}
+
+.rotate {
+  transform: rotate(0);
+  transition: transform 0.5s ease;
+}
+
+.box:hover .rotate {
+    transform: rotate(270deg); /* Standard syntax */
+}
+
+.rotatey {
+  transform: perspective(1) scaleZ(1) rotateY(0deg);
+  transition: transform 0.5s ease;
+/*   perspective: 300px; */
+/*   transform-style: preserve-3d; */
+}
+
+.box:hover .rotatey {
+/*   transform: translate3d(42px, 42px, 42px); */
+  transform: perspective(500px) scaleZ(2) rotateY(45deg);
+ /* Standard syntax */
+}
+
+.rotatex {
+/*   perspective: 100px; */
+  transform: perspective(1) scaleZ(1) rotateX(0deg);
+  transition: transform 0.5s ease;
+}
+
+.box:hover .rotatex {
+  transform: perspective(500px) scaleZ(2) rotateX(45deg);
+ /* Standard syntax */
+}
+
+.scale {
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+
+.box:hover .scale {
+  transform: scale(1.5, 1.5);
+}
