@@ -55,7 +55,7 @@ p {
 }
 
 .box:hover .rotate {
-    transform: rotate(270deg); /* Standard syntax */
+  transform: rotate(270deg); /* Standard syntax */
 }
 
 .rotatey {
