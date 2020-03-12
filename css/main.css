@@ -1,6 +1,6 @@
 html {
   color: #222;
-  background-color: #ffff00;
+  background-color: #ff0;
 }
 
 body {
@@ -25,7 +25,7 @@ p {
   width: calc(75%);
   background: #ddd;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
