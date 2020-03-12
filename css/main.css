@@ -78,7 +78,6 @@ p {
   transition: transform .5s ease;
 }
 
-
 .box:hover .scale {
   transform: scale(1.5, 1.5);
 }
